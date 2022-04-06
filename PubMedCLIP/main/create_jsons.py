@@ -28,9 +28,9 @@ def _imgsize(img_path):
 
 def create_jsons(train_path, validation_path, test_path, jsonpath):
     # read data
-    train_df = pd.read_csv(os.path.join(train_path, "radiologytraindata.csv"))
-    validation_df = pd.read_csv(os.path.join(validation_path, "radiologyvaldata.csv"))
-    test_df = pd.read_csv(os.path.join(test_path, "radiologytestdata.csv"))
+    train_df = pd.read_csv(os.path.join(train_path, "train_obj36.tsv")) # "radiologytraindata.csv"
+    validation_df = pd.read_csv(os.path.join(validation_path, "valid_obj36.tsv")) # "radiologyvaldata.csv"
+    test_df = pd.read_csv(os.path.join(test_path, "test_obj36.tsv")) # "radiologytestdata.csv"
 
     assert len(train_df.columns) == 3 
     assert len(validation_df.columns) == 3 
