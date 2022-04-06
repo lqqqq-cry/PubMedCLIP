@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TRAINPATH=/path/to/ROCO/train
-VALPATH=/path/to/ROCO/validation
-TESTPATH=/path/to/ROCO/test
+TRAINPATH=/content/PubMedCLIP/data/ImageClef-2019-VQA-Med-Training # TRAINPATH=/path/to/ROCO/train
+VALPATH=/content/PubMedCLIP/data/ImageClef-2019-VQA-Med-Validation # VALPATH=/path/to/ROCO/validation
+TESTPATH=/content/PubMedCLIP/data/VQAMed2019Test # TESTPATH=/path/to/ROCO/test
 JSONPATH=./data
 CREATEJSONPROG=./main/create_jsons.py
 
